@@ -1,6 +1,8 @@
 		
 public class Scope {
 	public static void main(String[] argv){
+//		Ttest a = new Ttest();
+//		a.show();
 		int x = 1;
 		{
 			int y  = 20;
@@ -32,6 +34,8 @@ public class Scope {
 		int a = 1000;
 		a += a;
 		System.out.println(a);
+		
+		
 		
 	}
 }

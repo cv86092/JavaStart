@@ -1,32 +1,27 @@
-class Ttest{
-	int  x ;
-	int  y ;
-	
-	Ttest(int intx){
-		x=  intx;
+
+
+
+
+class TestOverloading{
+	int x=4;
+//	int y=3;
+	int y;
+	TestOverloading(){
 		
 	}
-	
-	Ttest(){
-		
-		
-	}
-	
-	
-	void show(){
-		System.out.println("x=" +x);
-		System.out.println("y=" +y);
-		
+	TestOverloading(int xint){
+		this.x = 10;
+
+	}	
+	void show(int x){
+		System.out.println(x+ " " + y);
 	}
 }
 
-
 public class Overloading {
-
-	public static void mian(String[] argv){
-		Ttest a = new Ttest();
-		a.show();
-		
-	}
-
+	public static void main(String[] argv){
+		int x =11;
+		TestOverloading a = new TestOverloading(9);
+		a.show(x);
+	} 
 }
