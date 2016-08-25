@@ -14,8 +14,13 @@ class accessTest{
 	public int getY(){return y;}
 	public void setY(int y ){this.y = y;}
 }
+
+
 public class AccessMethod {
 	public static void main(String[] argv){
+		
+		
+		
 		accessTest a =  new accessTest(30,40);
 		accessTest b = new accessTest(30,100);
 		
