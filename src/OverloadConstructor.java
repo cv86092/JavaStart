@@ -42,8 +42,10 @@ public class OverloadConstructor {
 		
 		Rectangle a = new Rectangle(0,0,5,-5);
 		Rectangle b = new Rectangle(new Point(3,3),4);
+		Rectangle c = new Rectangle();
 		System.out.println("a area :"+ a.area());
-		System.out.print("b area :"+ b.area());
+		System.out.println("b area :"+ b.area());
+		System.out.print("c area :"+ c.area());
 
 
 	}
