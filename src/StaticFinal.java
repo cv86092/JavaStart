@@ -1,29 +1,50 @@
  class TestFinal{
 	int x;
-	static final int y;
-
-	static{
-		  y = 199;
-	}
-	TestFinal(int x){
-		this.x = x;
-		//this.y = y;
-	}
-	TestFinal(){
+	int y;
+	
+	TestFinal(int x , int y){
+		this.x=x;
+		this.y=y;
 		
 	}
 	
+	TestFinal(){
+		this(11,22);
+	}
+	
+ }	
+class TestFinalthis{
+		TestFinal a;
+		TestFinal b;
+		
+		TestFinalthis(TestFinal a , TestFinal b){
+			this.a = a;
+			this.b = b;
+			
+		}
+
+		TestFinalthis(){
+			this(new TestFinal(44,42),new TestFinal(52,73));
+		}
+		
+}
+		
 
 	
-}
+
+	
+
 
 
 public class StaticFinal {
 	public static void main(String[] argv){
-		TestFinal a = new TestFinal(1);	
+		TestFinal a = new TestFinal();	
+		TestFinalthis b = new TestFinalthis();
 		//a.y =133;
-		System.out.println(a.x);
-		System.out.println(a.y);
+		System.out.println(b.a.x);
+		System.out.println(b.a.y);
+		System.out.println(b.b.x);
+		System.out.println(b.b.y);
 	}
 	
 
