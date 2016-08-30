@@ -1,7 +1,8 @@
 class accessTest{
 	private int x;
-	public static int y=200;
+	public static int y;
 	 static{
+		 
 		 int y =99;
 	}
 	public accessTest(int x,int y){

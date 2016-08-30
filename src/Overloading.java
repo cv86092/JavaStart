@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
  class Overloading{
 	 public static void main(String[] argv){
 		 System.out.println("123");
@@ -8,7 +7,6 @@
 		 a.showDog();
 		 showDog.hellocat();
 		 a.hellocat();
->>>>>>> origin/master
 
 		 
 	 }
@@ -35,7 +33,7 @@
 		 System.out.println(dog);
 		 System.out.println(cat);
 
-<<<<<<< HEAD
+
 
 
 class TestOverloading{
